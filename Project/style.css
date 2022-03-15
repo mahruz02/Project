@@ -1,148 +1,245 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
+/* Write your code at the bottom */
+
+* {
     box-sizing: border-box;
 }
 
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family:Arial, Helvetica, sans-serif
+    font-family: "Lucida Grande";
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: left;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+/* .top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(./asset/TEH-BOTOL.png);
+    background-size: cover;
+    color: #1B1A17;
+    text-align: left;
+} */
+
+.top-wrapper {
+    padding: 200px 0 400px 0;
+    color: rgb(252, 252, 252);
+    background: #141E27;
+    background-image: url(./asset/TEH-BOTOL.png);
+    background-size: cover;
+    background-position: right;
+    text-align: left;
+}
+
+.top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.top-wrapper p {
+    opacity: 0.7;
+    margin-bottom: 3px;
+}
+
+.mid-wrapper {
+    background: #203239;
+    text-align: center;
+    color: rgb(252, 252, 252);
 }
 
 header {
-    height: 100px;
+    height: 65px;
     width: 100%;
-    background:rgb(0, 0, 0) ;
-    position:absolute;
-    box-shadow: 0 2px 4px 0 rgb(255, 255, 255);
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
 
+.logo {
+    width: 70px;
+    margin-top: 0px;
 }
 
 .header-left {
     float: left;
 }
 
-.logo {
-    line-height: 80px;
-    padding:0 100px;
-}
-
 .header-right {
     float: right;
+    margin-right: -25px;
 }
 
-.header-right ul {
-    float: right;
-    margin-right: 20px;
-}
-
-.header-right ul li {
-    display: inline-block;
-    line-height:80px;
-    margin: 0 5px;
-    position: relative;
-    padding: 10px 30px;
-}
-
-.header-right ul li a {
-    color: white;
-    font-size:17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-.header-right.active, a:hover{
-    background:rgb(255, 1, 1);
-    transition: .3s;
-}
-
-.top-wrapper.container{
-    width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto; 
-    margin-right: auto;
-}
-
-.top-wrapper {
-    padding-top: 300px;
-    padding-bottom: 200px;
+.header-right a {
+    line-height: 65px;
+    padding: 0 25px;
     color: rgb(252, 252, 252);
-    background: rgb(0,0,0);
-    background-image: url(../Project/asset/TEH-BOTOL.png);
-    background-size:1500px;
-    background-repeat: no-repeat;
-    background-position:right 100px;
+    display: block;
+    float: left;
+    transition: all 0.5s;
 }
 
-.top-wrapper h1 {
-    opacity: 0.7;
-    font-size: 60px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    margin-left: 100px;
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
-.top-wrapper p {
-    margin-top: 20px;
-    padding-right: 20px;
-    padding-left: 100px;
-    opacity: 0.7;
-    letter-spacing: 2px;
-    font-size:17px;
-
-}
-
-.mid-wrapper {
-    height:700px;
-    padding-top: 100px;
-    padding-bottom: 350px;
-    padding-right: 100px;
-    color: rgb(255, 255, 255);
-    background: rgb(85, 81, 81);
+.produk-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #203239;
     text-align: center;
 }
 
-.mid-wrapper h1 {
-    opacity: 1;
-    font-size: 60px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    margin-left: 100px;
+.heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: rgb(252, 252, 252);
+}
+
+.heading h2 {
     font-weight: normal;
 }
 
-.mid-wrapper p {
-    margin-top: 20px;
-    padding-right: 20px;
-    padding-left: 100px;
-    opacity: 1;
-    letter-spacing: 2px;
-    font-size:17px;
-}
-
-.lesson {
+.produk {
     float: left;
-    width: 15%;
-    padding-left: 350px;
-    padding-top: 30px;
+    width: 25%;
 }
 
+.produk-icon {
+    position: relative;
+}
+
+.text-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #b3aeb5;
+}
+
+.produk img {
+    height: 150px;
+}
+
+.produk p {
+    color: rgb(252, 252, 252);
+}
+
+.heading h3 {
+    font-weight: normal;
+}
+
+.message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+    background: #203239;
+}
+
+.message {
+    padding: 15px 40px;
+    background-color: #cc4d48;
+    cursor: pointer;
+    box-shadow: 0 7px #791a1a;
+}
+
+.message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
 
 footer img {
-    width: 125px;
-}
-
-footer p {
-    padding-left: 20px;
-    padding-bottom: 30px;
-    color:#b3aeb5;
-    font-size: 20px;
+    height: 100px;
 }
 
 footer {
-    background:rgb(0, 0, 0) ;
-    padding-top: 30px;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+/* .btn-wrapper p {
+    margin: 10px 0;
+} */
+
+.signup {
+    background-color: #239b76;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #55acee;
+}
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+span.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
 }
